@@ -3,71 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oksana Pak - AI-маркетинг и Автоворонки</title>
+    <title>SmartAI Marketing - AI-маркетинг и Автоворонки</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #f8f9fa;
             color: #333;
             margin: 0;
             padding: 0;
+            transition: all 0.3s ease-in-out;
         }
         header {
-            background-color: #ff6600;
+            background: linear-gradient(90deg, #ff6600, #ff3300);
             color: white;
             padding: 20px;
             text-align: center;
-            font-size: 24px;
+            font-size: 28px;
+            font-weight: bold;
+            animation: fadeInDown 1s ease-in-out;
         }
         .container {
             max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
             background: white;
-            border-radius: 8px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
         }
         .button {
             display: inline-block;
-            background-color: #28a745;
+            background-color: #25D366;
             color: white;
-            padding: 10px 20px;
+            padding: 14px 28px;
             text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
+            border-radius: 8px;
+            font-size: 22px;
+            font-weight: bold;
+            transition: transform 0.3s ease-in-out, background-color 0.3s;
         }
         .button:hover {
-            background-color: #218838;
+            background-color: #1ebc57;
+            transform: scale(1.1) rotate(3deg);
         }
         footer {
             text-align: center;
-            padding: 10px;
-            background-color: #ff6600;
+            padding: 20px;
+            background: linear-gradient(90deg, #ff6600, #ff3300);
             color: white;
             margin-top: 20px;
+            font-size: 20px;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        .price-table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .price-table th, .price-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        .price-table th {
+            background-color: #ff6600;
+            color: white;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
 <body>
     <header>
-        Oksana Pak - AI-маркетинг | Автоворонки | Чат-боты
+        <a href="https://smartai.marketing" style="color: white; text-decoration: none;">SmartAI Marketing - AI-маркетинг | Автоворонки | Чат-боты</a>
     </header>
     
     <div class="container">
         <h2>Привожу горячих клиентов и автоматизирую продажи!</h2>
         <p>Я специалист по таргетированной рекламе и нейросетям, помогаю бизнесам привлекать клиентов и увеличивать продажи.</p>
+        <img src="marketing-strategy.jpg" alt="Маркетинговая стратегия">
+        <br>
         <a class="button" href="https://wa.me/87776852833">Связаться в WhatsApp</a>
     </div>
     
     <div class="container">
+        <h2>Прайс на услуги</h2>
+        <table class="price-table">
+            <tr>
+                <th>Услуга</th>
+                <th>Описание</th>
+                <th>Цена</th>
+            </tr>
+            <tr>
+                <td>Таргетированная реклама</td>
+                <td>В Instagram и Facebook + KPI</td>
+                <td>от 30 000 KZT</td>
+            </tr>
+            <tr>
+                <td>Настройка чат-бота</td>
+                <td>На личный аккаунт (с ИИ / без ИИ)</td>
+                <td>от 100 000 KZT / 30 000 KZT</td>
+            </tr>
+            <tr>
+                <td>Создание лендинга</td>
+                <td>Одностраничный сайт для продвижения</td>
+                <td>30 000 KZT</td>
+            </tr>
+            <tr>
+                <td>Создание сайта</td>
+                <td>Полноценный сайт (2-5 страниц)</td>
+                <td>50 000 KZT</td>
+            </tr>
+            <tr>
+                <td>Создание лид-магнита</td>
+                <td>Привлечение клиентов через полезный контент</td>
+                <td>30 000 KZT</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="container">
         <h2>Контакты</h2>
-        <p>Телефон: 87776852833, 87477447642</p>
-        <p>Email: <a href="mailto:Oksipak2010@mail.ru">Oksipak2010@mail.ru</a></p>
-        <p>Instagram: <a href="https://www.instagram.com/smartai.marketing" target="_blank">@smartai.marketing</a></p>
+        <img src="contact-banner.jpg" alt="Свяжитесь с нами">
+        <p><img src="phone-icon.png" width="20"> Телефон: <b>87776852833, 87477447642</b></p>
+        <p><img src="email-icon.png" width="20"> Email: <a href="mailto:Oksipak2010@mail.ru"><b>Oksipak2010@mail.ru</b></a></p>
+        <p><img src="instagram-icon.png" width="20"> Instagram: <a href="https://www.instagram.com/smartai.marketing" target="_blank"><b>@smartai.marketing</b></a></p>
     </div>
     
     <footer>
-        &copy; 2025 Oksana Pak - Все права защищены
+        &copy; 2025 <a href="https://smartai.marketing" style="color: white; text-decoration: none;">SmartAI Marketing</a> - Все права защищены
     </footer>
 </body>
 </html>
+
+
